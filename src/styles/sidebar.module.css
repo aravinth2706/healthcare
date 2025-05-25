@@ -1,0 +1,81 @@
+.sidebar {
+  background-color: var(--secondary-bg);
+  height: 100vh;
+  width: 250px;
+  position: relative;
+  padding-top: 50px;
+}
+.label {
+  font-size: small;
+  color: var(--secondary-text);
+  padding: 10px 0 5px 0;
+}
+.title {
+  color: var(--primary-text);
+  font-size: x-large;
+  padding-left: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.title span {
+  color: rgba(0, 0, 0, 0.8);
+}
+.navSection {
+  padding-left: 30px;
+}
+.navSection:last-of-type {
+  position: absolute;
+  bottom: 5%;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-text);
+  padding: 6px 0;
+}
+.navItem:hover {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.active {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* Mobile */
+.isMobile {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary-bg);
+}
+.toolbar .title {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.menuIcon {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.menuIcon:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
