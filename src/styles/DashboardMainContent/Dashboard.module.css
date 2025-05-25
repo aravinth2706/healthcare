@@ -1,0 +1,57 @@
+.dashboard {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+}
+.dashboard > section {
+  flex-grow: 1;
+}
+.dashboard > section:last-of-type {
+  background-color: var(--secondary-bg);
+}
+.dashboardTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 10px 20px 15px;
+}
+.searchBar {
+  flex-grow: 1;
+  position: relative;
+}
+.searchBar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-indent: 25px;
+}
+.searchBar input:focus {
+  outline: none;
+}
+.searchIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  cursor: pointer;
+}
+.notificationIcon {
+  color: var(--blue-bg);
+  cursor: pointer;
+}
+.title {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.title > p {
+  font-size: larger;
+}
+.detailSection {
+  color: var(--blue-bg);
+  font-size: small;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
