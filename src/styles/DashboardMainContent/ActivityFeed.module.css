@@ -1,0 +1,50 @@
+.activityContainer {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+}
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.activityHeader > p:first-of-type {
+  font-size: small;
+  font-weight: 500;
+}
+.activityHeader > p:last-of-type {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: x-small;
+}
+
+.equalizer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  margin: 0 50px;
+}
+.bar {
+  width: 6px;
+  height: 50px;
+  border-radius: 3px;
+}
+.bar:nth-child(3n) {
+  background: var(--primary-text);
+}
+.bar:nth-child(3n + 1) {
+  background: var(--secondary-text);
+}
+.bar:nth-child(3n + 2) {
+  background: var(--blue-bg);
+}
+
+.dayLists {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dayLists p {
+  font-size: x-small;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 5px 0;
+}
