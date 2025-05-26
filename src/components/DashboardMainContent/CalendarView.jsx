@@ -1,9 +1,9 @@
 import styles from "../../styles/DashboardMainContent/CalendarView.module.css";
-import { MdAdd, MdArrowBack, MdArrowForward, MdBackHand } from "react-icons/md";
+import { MdAdd, MdArrowBack, MdArrowForward } from "react-icons/md";
 import { FaUserAstronaut } from "react-icons/fa";
-import teeth from "../../assets/images/dashboard/teeth.png";
 import UpcomingSchedule from "./UpcomingSchedule";
 import useDeviceType from "../../hooks/useDeviceType";
+import SimpleAppointmentCard from "../SimpleAppointmentCard";
 
 const calendarList = [
   { day: "Mon", date: "25", time: ["10.00", "11.00", "12.00"] },
@@ -48,24 +48,7 @@ function CalendarView() {
           </div>
         ))}
       </section>
-      <section className={styles.scheduleContainer}>
-        <section className={styles.dentist}>
-          <div className={styles.scheduleHeader}>
-            <p>Dentist</p>
-            <img src={teeth} alt="Dentist" width={20} />
-          </div>
-          <p className={styles.pTag}>09.11-11.00</p>
-          <p className={styles.pTag}>Dr.Cameron Willaiamon</p>
-        </section>
-        <section className={styles.physiotherapy}>
-          <div className={styles.scheduleHeader}>
-            <p>Physiotherapy Appoinment</p>
-            <MdBackHand />
-          </div>
-          <p className={styles.pTag}>09.11-11.00</p>
-          <p className={styles.pTag}>Dr.Cameron Willaiamon</p>
-        </section>
-      </section>
+      <SimpleAppointmentCard />
       <UpcomingSchedule />
     </section>
   );

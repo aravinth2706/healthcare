@@ -48,29 +48,3 @@
 .time > p {
   margin-bottom: 5px;
 }
-.scheduleContainer {
-  display: flex;
-  gap: 30px;
-  margin: 10px 0;
-}
-.dentist,
-.physiotherapy {
-  flex-grow: 1;
-  padding: 15px 10px;
-  border-radius: 15px;
-}
-.scheduleHeader {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-.dentist {
-  background-color: var(--blue-bg);
-  color: white;
-}
-.pTag {
-  font-size: x-small;
-}
-.physiotherapy {
-  background-color: rgba(135, 207, 235, 0.24);
-}
