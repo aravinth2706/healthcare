@@ -41,8 +41,8 @@ function CalendarView() {
             <p>{day}</p>
             <p className={styles.date}>{date}</p>
             <div className={styles.time}>
-              {time.map((data) => (
-                <p>{data}</p>
+              {time.map((data, i) => (
+                <p key={i}>{data}</p>
               ))}
             </div>
           </div>

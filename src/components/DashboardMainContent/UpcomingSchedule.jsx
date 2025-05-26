@@ -26,8 +26,8 @@ function UpcomingSchedule() {
           <p className={styles.day}>{day}</p>
           <section>
             {list.map(({ treatment, icon, time }, i) => (
-              <div>
-                <div key={i}>
+              <div key={i}>
+                <div>
                   <p className={styles.headline}>{treatment}</p>
                   <p className={styles.time}>{time}</p>
                 </div>
