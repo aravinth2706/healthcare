@@ -1,0 +1,47 @@
+.dashboardMain {
+  display: flex;
+  padding: 10px;
+}
+.anatomyContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 20px;
+}
+.anatomy {
+  padding: 0 50px;
+  background-color: var(--secondary-bg);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.heart,
+.leg {
+  position: absolute;
+  font-size: x-small;
+  padding: 5px 8px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.heart {
+  background-color: var(--blue-bg);
+  right: 0px;
+  top: 70px;
+  color: white;
+}
+.leg {
+  background-color: var(--primary-text);
+  left: 10px;
+  bottom: 90px;
+}
+.zoomInIcon {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: var(--secondary-text);
+}
+
+.healthStatus {
+}

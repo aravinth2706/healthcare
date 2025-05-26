@@ -1,6 +1,7 @@
 import styles from "../styles/DashboardMainContent/Dashboard.module.css";
 import { MdNotifications, MdSearch, MdKeyboardArrowDown } from "react-icons/md";
 import CalenderView from "../components/DashboardMainContent/CalendarView";
+import AnatomySection from "../components/DashboardMainContent/DashboardOverview/AnatomySection";
 
 function Dashboard() {
   return (
@@ -20,6 +21,7 @@ function Dashboard() {
             <MdKeyboardArrowDown />
           </div>
         </div>
+        <AnatomySection />
       </section>
       <section>
         <CalenderView />
