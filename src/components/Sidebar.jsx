@@ -9,7 +9,9 @@ import {
   MdSettings,
   MdMenu,
   MdClose,
+  MdAdd,
 } from "react-icons/md";
+import { FaUserAstronaut } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import styles from "../styles/sidebar.module.css";
 import useDeviceType from "../hooks/useDeviceType";
@@ -62,6 +64,14 @@ function Sidebar() {
           <div className={styles.title}>
             Health<span>care.</span>
           </div>
+          <section className={styles.calendarViewHeader}>
+            <div>
+              <FaUserAstronaut />
+            </div>
+            <div>
+              <MdAdd />
+            </div>
+          </section>
         </div>
       )}
 

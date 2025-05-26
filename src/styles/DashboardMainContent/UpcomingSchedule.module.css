@@ -1,0 +1,30 @@
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.scheduleSection > section {
+  display: flex;
+  gap: 10px;
+}
+.day {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--secondary-text);
+}
+.scheduleSection > section > div {
+  flex-grow: 1;
+  margin: 5px 0;
+  background-color: rgba(135, 207, 235, 0.24);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.8);
+}
+.headline {
+  font-size: small;
+  font-weight: 500;
+}
+.time {
+  font-size: x-small;
+}

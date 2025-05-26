@@ -5,6 +5,27 @@
   position: relative;
   padding-top: 50px;
 }
+.calendarViewHeader {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+.calendarViewHeader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.calendarViewHeader > div:first-of-type {
+  background-color: var(--primary-text);
+}
+.calendarViewHeader > div:last-of-type {
+  background-color: var(--blue-bg);
+}
 .label {
   font-size: small;
   color: var(--secondary-text);

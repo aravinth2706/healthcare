@@ -2,6 +2,8 @@ import styles from "../../styles/DashboardMainContent/CalendarView.module.css";
 import { MdAdd, MdArrowBack, MdArrowForward, MdBackHand } from "react-icons/md";
 import { FaUserAstronaut } from "react-icons/fa";
 import teeth from "../../assets/images/dashboard/teeth.png";
+import UpcomingSchedule from "./UpcomingSchedule";
+import useDeviceType from "../../hooks/useDeviceType";
 
 const calendarList = [
   { day: "Mon", date: "25", time: ["10.00", "11.00", "12.00"] },
@@ -13,16 +15,19 @@ const calendarList = [
   { day: "Sun", date: "31", time: ["09.00", "10.00", "11.00"] },
 ];
 function CalendarView() {
+  const { isMobile } = useDeviceType();
   return (
     <section className={styles.calendarViewContainer}>
-      <section className={styles.calendarViewHeader}>
-        <div>
-          <FaUserAstronaut />
-        </div>
-        <div>
-          <MdAdd />
-        </div>
-      </section>
+      {!isMobile && (
+        <section className={styles.calendarViewHeader}>
+          <div>
+            <FaUserAstronaut />
+          </div>
+          <div>
+            <MdAdd />
+          </div>
+        </section>
+      )}
       <section className={styles.calendarHeader}>
         <p>October 2021</p>
         <div>
@@ -61,6 +66,7 @@ function CalendarView() {
           <p className={styles.pTag}>Dr.Cameron Willaiamon</p>
         </section>
       </section>
+      <UpcomingSchedule />
     </section>
   );
 }
