@@ -1,18 +1,36 @@
 import styles from "../../styles/DashboardMainContent/UpcomingSchedule.module.css";
+import { MdFavorite, MdVisibility, MdMedicalServices } from "react-icons/md";
+import { FaSyringe } from "react-icons/fa";
 
 const schedule = [
   {
     day: "On Thursday",
     list: [
-      { treatment: "Health Checkup Completed", icon: "", time: "11.00 AM" },
-      { treatment: "Health Checkup Completed", icon: "", time: "11.00 AM" },
+      {
+        treatment: "Health Checkup Completed",
+        icon: <FaSyringe size={20} />,
+        time: "11.00 AM",
+      },
+      {
+        treatment: "Ophthalmologist",
+        icon: <MdVisibility size={20} />,
+        time: "14.00 PM",
+      },
     ],
   },
   {
     day: "On Saturday",
     list: [
-      { treatment: "Health Checkup Completed", icon: "", time: "11.00 AM" },
-      { treatment: "Health Checkup Completed", icon: "", time: "11.00 AM" },
+      {
+        treatment: "Cardiologist",
+        icon: <MdFavorite size={20} color="red" />,
+        time: "12.00 AM",
+      },
+      {
+        treatment: "Neurologist",
+        icon: <MdMedicalServices size={20} />,
+        time: "16.00 PM",
+      },
     ],
   },
 ];
