@@ -17,7 +17,7 @@ function Dashboard() {
         <div className={styles.title}>
           <p>Dashboard</p>
           <div className={styles.detailSection}>
-            <span>Details</span>
+            <span>This Week</span>
             <MdKeyboardArrowDown />
           </div>
         </div>
