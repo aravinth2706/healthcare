@@ -1,0 +1,52 @@
+.healthStatusContainer {
+  padding: 0 20px;
+}
+.healthStatus {
+  background-color: var(--secondary-bg);
+  margin-bottom: 10px;
+  padding: 13px 10px;
+  border-radius: 10px;
+}
+.healthStatus > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.healthStatus > div > img {
+  width: 30px;
+}
+.healthStatus > div > p {
+  font-weight: 400;
+  font-size: small;
+}
+.date {
+  color: var(--secondary-text);
+  font-size: x-small;
+  margin: 5px 0;
+}
+.progressContainer {
+  width: 150px;
+  height: fit-content;
+  background-color: var(--secondary-text);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progressContainer div {
+  width: 70%;
+  height: 8px;
+  border-radius: 50px;
+}
+.details {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: end;
+  font-size: x-small;
+  font-weight: 500;
+  color: var(--blue-bg);
+}
+.details > p:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

@@ -28,20 +28,17 @@
 .heart {
   background-color: var(--blue-bg);
   right: 0px;
-  top: 70px;
+  top: 65px;
   color: white;
 }
 .leg {
   background-color: var(--primary-text);
   left: 10px;
-  bottom: 90px;
+  bottom: 85px;
 }
 .zoomInIcon {
   position: absolute;
   top: 10px;
   right: 30px;
   color: var(--secondary-text);
-}
-
-.healthStatus {
 }

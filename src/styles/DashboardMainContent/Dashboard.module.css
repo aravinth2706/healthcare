@@ -6,6 +6,9 @@
 .dashboard > section {
   flex-grow: 1;
 }
+.dashboard > section:first-of-type {
+  max-width: 500px;
+}
 .dashboard > section:last-of-type {
   background-color: var(--secondary-bg);
 }
